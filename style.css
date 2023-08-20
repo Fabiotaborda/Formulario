@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --background-main: #efefef;
+  --background-header: #535971;
+  --background-input: #fafafc;
+  --white: #fff;
+  --input: #4e4958;
+  --span: #c1bccc;
+  --line: #e6e6f0;
+}
+
+body {
+  background: var(--background-main);
+}
+
+body::before {
+  content: "";
+
+  width: 100%;
+  height: 43.6rem;
+
+  position: absolute;
+  z-index: -1;
+
+  background: var(--background-header);
+}
+
+.container {
+  width: 75rem;
+  margin: auto;
+}
+
+header {
+  padding-top: 14rem;
+}
+
+header h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 4.8rem;
+  color: var(--white);
+}
+
+header p {
+  font-size: 2rem;
+  color: var(--white);
+
+  padding: 1.6rem 0 5.6rem;
+  width: 41.7rem;
+}
+
+form {
+  border-radius: 20px 20px 0px 0px;
+
+  background: var(--white);
+
+  padding: 3.2rem 6.4rem 6.4rem;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  color: var(--background-header);
+  font-family: "Staatliches", cursive;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+
+  padding-top: 3.2rem;
+}
+
+.line {
+  border: 1px solid var(--line);
+
+  margin: 0.8rem 0 3.2rem;
+}
+
+.input-wrapper {
+  color: var(--input);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.input-wrapper span {
+  color: var(--span);
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.input-wrapper input {
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #e6e6f0);
+  background: var(--background-input);
+
+  height: 5.6rem;
+
+  width: 100%;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+}
+
+fieldset .input-wrapper:nth-child(4) {
+  padding: 2rem 0 2rem;
+}
+
+.timeline legend {
+  color: var(--background-header);
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  line-height: 34px;
+
+  padding: 0 0 0.8rem;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+div:nth-child(2) .hour:nth-child(2) {
+  padding-bottom: 1.6rem;
+}
+
+.hour {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+footer {
+  margin: auto;
+  width: 75rem;
+  height: 16rem;
+
+  background: var(--background-header);
+
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button input {
+  width: 60.8rem;
+  height: 5.5rem;
+  padding: 1.5rem 4rem;
+
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 20px;
+  background: #ff5374;
+
+  color: var(--white);
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
